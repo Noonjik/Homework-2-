@@ -8,9 +8,8 @@ def Digits_of_a_Number(n):
     return digits_list
 
 num=int(input('input a natural number: n= '))
-Sum=sum(Digits_of_a_Number(num))
-print(Sum)
-while Sum>10:
+
+while num>=10:
+    num=sum(Digits_of_a_Number(num))
     digits_list.clear()
-    Sum=sum(Digits_of_a_Number(Sum))
-    print(Sum)
+    print(num)
